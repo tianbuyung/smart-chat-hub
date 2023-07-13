@@ -1,3 +1,5 @@
+import { Feed } from "@/components";
+
 const Home = () => {
   return (
     <section className="w-full flex-center flex-col">
@@ -10,11 +12,12 @@ const Home = () => {
         </span>
       </h1>
       <p className="desc text-center">
-        Smart Chat Hub is an open-source app that empowers users to share
-        prompts, unlock AI-driven conversations, collaborate, connect, and
-        explore limitless possibilities in a centralized hub that fosters
-        creativity.
+        SmartChatHub is an open-source app that empowers users to share prompts,
+        unlock AI-driven conversations, collaborate, connect, and explore
+        limitless possibilities in a centralized hub that fosters creativity.
       </p>
+
+      <Feed />
     </section>
   );
 };

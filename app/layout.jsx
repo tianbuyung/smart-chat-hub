@@ -1,9 +1,10 @@
+import { Navbar } from "@/components";
 import "@/styles/globals.css";
 
 export const metadata = {
-  title: "Smart Chat Hub - Revolutionizing Conversations with AI",
+  title: "SmartChatHub - Revolutionizing Conversations with AI",
   description:
-    "Smart Chat Hub is a cutting-edge, full-stack application powered by Next.js and integrated with OpenAI API. Share prompts, unlock AI-driven conversations, and explore limitless possibilities. Collaborate, connect, and foster creativity in our centralized hub. Join the future of AI interaction and experience the power of intelligent chat.",
+    "SmartChatHub is a cutting-edge, full-stack application powered by Next.js and integrated with OpenAI API. Share prompts, unlock AI-driven conversations, and explore limitless possibilities. Collaborate, connect, and foster creativity in our centralized hub. Join the future of AI interaction and experience the power of intelligent chat.",
 };
 
 const RootLayout = ({ children }) => {
@@ -14,7 +15,10 @@ const RootLayout = ({ children }) => {
           <div className="gradient" />
         </div>
 
-        <main className="app">{children}</main>
+        <main className="app">
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );
